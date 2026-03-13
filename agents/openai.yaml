@@ -1,0 +1,4 @@
+interface:
+  display_name: "Generate PDF Reports"
+  short_description: "Create enterprise-grade branded PDF report outputs"
+  default_prompt: "Use $generate-pdf-reports to turn this content into a polished, branded PDF report with charts, tables, TOC, and page numbers."

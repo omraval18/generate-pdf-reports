@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{report_title}}</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="report">
+      <section class="page cover" id="cover">
+        <div class="cover__top">
+          <img class="brand-logo" src="{{logo_src}}" alt="{{brand_name}} logo" />
+          <p class="eyebrow">{{report_type}}</p>
+        </div>
+        <div class="cover__body">
+          <h1>{{report_title}}</h1>
+          <p class="subtitle">{{report_subtitle}}</p>
+          <dl class="meta-grid">
+            <div>
+              <dt>Prepared for</dt>
+              <dd>{{audience}}</dd>
+            </div>
+            <div>
+              <dt>Date</dt>
+              <dd>{{report_date}}</dd>
+            </div>
+            <div>
+              <dt>Prepared by</dt>
+              <dd>{{author_name}}</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="page toc" id="toc">
+        <h2>Contents</h2>
+        <nav>
+          <ol class="toc-list">
+            <li><a href="#summary">Executive summary</a></li>
+            <li><a href="#findings">Key findings</a></li>
+            <li><a href="#performance">Performance analysis</a></li>
+            <li><a href="#opportunities">Opportunities</a></li>
+            <li><a href="#appendix">Appendix</a></li>
+          </ol>
+        </nav>
+      </section>
+
+      <section class="page section" id="summary">
+        <header class="section-header">
+          <p class="eyebrow">Executive Summary</p>
+          <h2>{{summary_title}}</h2>
+        </header>
+        <p class="lead">{{summary_lead}}</p>
+        <div class="callout">
+          <h3>Top takeaway</h3>
+          <p>{{summary_takeaway}}</p>
+        </div>
+      </section>
+
+      <section class="page section" id="findings">
+        <header class="section-header">
+          <p class="eyebrow">Findings</p>
+          <h2>{{findings_title}}</h2>
+        </header>
+        <p>{{findings_intro}}</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Area</th>
+              <th>Status</th>
+              <th>Evidence</th>
+              <th>Priority</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{{row_area}}</td>
+              <td>{{row_status}}</td>
+              <td>{{row_evidence}}</td>
+              <td>{{row_priority}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="page section" id="performance">
+        <header class="section-header">
+          <p class="eyebrow">Analysis</p>
+          <h2>{{performance_title}}</h2>
+        </header>
+        <figure class="chart-card">
+          <div class="chart-placeholder">{{chart_or_svg}}</div>
+          <figcaption>{{chart_caption}}</figcaption>
+        </figure>
+      </section>
+
+      <section class="page section" id="opportunities">
+        <header class="section-header">
+          <p class="eyebrow">Recommendations</p>
+          <h2>{{opportunities_title}}</h2>
+        </header>
+        <div class="two-col">
+          <div>
+            <h3>{{recommendation_one_title}}</h3>
+            <p>{{recommendation_one_body}}</p>
+          </div>
+          <div>
+            <h3>{{recommendation_two_title}}</h3>
+            <p>{{recommendation_two_body}}</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="page section appendix" id="appendix">
+        <header class="section-header">
+          <p class="eyebrow">Appendix</p>
+          <h2>{{appendix_title}}</h2>
+        </header>
+        <p>{{appendix_intro}}</p>
+      </section>
+    </main>
+    <footer class="report-footer">
+      <span>{{brand_name}}</span>
+      <span>{{footer_text}}</span>
+      <span class="page-counter"></span>
+    </footer>
+  </body>
+</html>
