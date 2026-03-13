@@ -1,0 +1,36 @@
+{
+  "name": "generate-pdf-reports",
+  "owner": {
+    "name": "omraval18",
+    "url": "https://github.com/omraval18/generate-pdf-reports"
+  },
+  "metadata": {
+    "description": "Tool-agnostic skill for creating enterprise-grade branded PDF reports from text and structured data",
+    "version": "0.1.0",
+    "repository": "https://github.com/omraval18/generate-pdf-reports"
+  },
+  "plugins": [
+    {
+      "name": "generate-pdf-reports",
+      "source": "./",
+      "description": "Create polished, light-theme PDF reports with structured sections, tables, charts, logo support, navigable table of contents or bookmarks, page numbers, and branded footers for SEO audits, GEO audits, market research, and executive reporting.",
+      "version": "0.1.0",
+      "category": "productivity",
+      "tags": [
+        "pdf",
+        "reporting",
+        "enterprise-reports",
+        "report-design",
+        "branded-documents",
+        "market-research",
+        "seo-audit",
+        "geo-audit",
+        "charts",
+        "tables",
+        "toc",
+        "paged-media"
+      ],
+      "skills": ["./"]
+    }
+  ]
+}
